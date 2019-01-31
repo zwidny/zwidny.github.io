@@ -18,7 +18,7 @@
 ├── _includes                  # include 文件存放位置  e.g.:  {% include navigation.html %}
 │   └── navigation.html
 ├── index.md
-├── _layouts                   # 元文件
+├── _layouts                   # layout模板文件
 │   ├── author.html
 │   ├── default.html
 │   └── post.html              # blog文件的元文件

@@ -1,6 +1,11 @@
-# React VS Vue
-
 ---
+layout: markdown
+title:  "React VS Vue"
+date:   2019-01-31 09:49:47 +0800
+categories: jekyll update
+---
+
+
 此文旨在对比React与Vue优略，給众多开发者一个选择的思路。下面将会在一下几个方面对比二者， 对于结论，仁者见仁智者见智。
 
 > * 流行程度
@@ -36,11 +41,13 @@
 
 ## 语法对比
 + Vue
+
 ```html
 <div id="app">
   {{ message }}
 </div>
 ```
+
 ```javascript
 var app = new Vue({
   el: '#app',
@@ -50,10 +57,11 @@ var app = new Vue({
 })
 ```
 + React
+
 ```html
-<div id="app">
-</div>
+<div id="app"></div>
 ```
+
 ```javascript
 ReactDOM.render(
   <h1>Hello, world!</h1>,
