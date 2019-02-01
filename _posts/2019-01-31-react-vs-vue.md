@@ -16,27 +16,28 @@ categories: jekyll update
 
 ## 流行程度
 
-+ 以githua star 为例
-![star.png-19.2kB][1]
-从流行程度来说， 两者可以说不分伯仲  
+1. 以githua star 为例, 两者可以说不分伯仲  
 
-+ 以githua star history为例
-![stat_history.png-48kB][2]
-从star趋势来看， vue可以说势头很猛
+   ![star.png-19.2kB][1]  
+
+1. 以githua star history为例，vue可以说势头很猛
+
+   ![stat_history.png-48kB][2]  
 
 
 ## 社区贡献/开发维护
 
-+ npm trend
-![npm_trend.png-77.4kB][3]
-在社区贡献上， 明显React 略胜一筹
++ npm trend 在社区贡献上， 明显React 略胜一筹
+
+   ![npm_trend.png-77.4kB][3]
+
 
 
 ## 学习资源
 
-以stackoverflow.com trend为例
-![stack.svg-21kB][4]
-可以看出相对于vue在学习react时，碰到问题会有更多的参考
+以stackoverflow.com trend为例，可以看出相对于vue在学习react时，碰到问题会有更多的参考
+
+   ![stack.svg-21kB][4]
 
 
 ## 语法对比
@@ -46,9 +47,7 @@ categories: jekyll update
 <div id="app">
   {{ message }}
 </div>
-```
 
-```javascript
 var app = new Vue({
   el: '#app',
   data: {
@@ -60,9 +59,7 @@ var app = new Vue({
 
 ```html
 <div id="app"></div>
-```
 
-```javascript
 ReactDOM.render(
   <h1>Hello, world!</h1>,
   document.getElementById('root')
@@ -71,18 +68,23 @@ ReactDOM.render(
 语法对比：vue更倾向于简洁，react更倾向于模块化 
 
 ## 网络观点
-+ 如果你没有JavaScript基础， Vue是一个很好的起点， 且学习起来很容易。反之的话，React对了你来说， 一定会得心应手. [**resource**](https://medium.com/unicorn-supplies/angular-vs-react-vs-vue-a-2017-comparison-c5c52d620176)
-+ React VS vue [**resource**](https://scotch.io/bar-talk/vuejs-and-reactjs-a-quick-comparison)：
-   相对于React, Vue有如下优势
-   + 更小更快
-   + 方便的模板化简化了开发过程
-   + 语法更简单
+1. [如果你没有JavaScript基础， Vue是一个很好的起点， 且学习起来很容易。反之的话，React对了你来说， 一定会得心应手.](https://medium.com/unicorn-supplies/angular-vs-react-vs-vue-a-2017-comparison-c5c52d620176)
+1. [React VS vue](https://scotch.io/bar-talk/vuejs-and-reactjs-a-quick-comparison)：
   
- 相对于Vue, React有如下优势
-   + 在开发大型应用上更灵活
-   + 容易测试
-   + 更多信息和解决方案
-   + 还适合移动端开发
+   + 相对于React, Vue有如下优势
+   
+      >
+       * 更小更快
+       * 方便的模板化简化了开发过程
+       * 语法更简单
+  
+   + 相对于Vue, React有如下优势
+   
+      > 
+       * 在开发大型应用上更灵活
+       * 容易测试
+       * 更多信息和解决方案
+       * 还适合移动端开发
 
 
   [1]: http://static.zybuluo.com/zwidny/icr4v1fvn2t13pj452etm63t/star.png

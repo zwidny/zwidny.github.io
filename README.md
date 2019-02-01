@@ -2,6 +2,36 @@
 
 ## 开发指导
 
+
+### 环境设置
+
+#### ubuntu 18.04
+**这里针对的是zsh, 如果你是用的是其他sh， 请更改相应的文件**
+``
+```commandline
+sudo apt-get install ruby-full build-essential zlib1g-dev 
+
+cat << EOF > ~/.zshrc
+# Install Ruby Gems to ~/gems
+export GEM_HOME="\$HOME/gems" 
+export PATH="\$HOME/gems/bin:\$PATH" 
+EOF 
+
+source ~/.zshrc 
+
+gem install jekyll bundler
+```
+
+### 运行指导
+
+```text
+-> pwd
+zwidny.github.
+-> bundle install
+-> bundle exec jekyll serve
+
+```
+
 ### 目录结构
 ```text
 
