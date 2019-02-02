@@ -111,7 +111,7 @@ pre {
 
 p code, li code {
     display: inline-block;
-    white-space: nowrap;
+    white-space: no-wrap;
     background: #fff;
     font-size: 0.9rem;
     line-height: 1.5em;
