@@ -1,10 +1,10 @@
 html, body {
-    color: #5e676d;
-    font-family: "Open Sans", "Clear Sans", sans-serif;
+    font-family: "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
     font-size: 16px;
-
+    color: #222222;
     -webkit-text-size-adjust: none;
-
+    min-width: 760px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 1rem;
     line-height: 1.5rem;
@@ -12,7 +12,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "PT Sans", "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Hiragino Sans GB", sans-serif;
     text-rendering: optimizelegibility;
     margin-bottom: 1em;
     font-weight: bold;
@@ -90,7 +90,7 @@ a {
 }
 
 pre, code, p code, li code {
-    font-family: "Roboto Mono", Menlo, monospace;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace
 }
 
 pre {
@@ -111,7 +111,7 @@ pre {
 
 p code, li code {
     display: inline-block;
-    white-space: no-wrap;
+    white-space: nowrap;
     background: #fff;
     font-size: 0.9rem;
     line-height: 1.5em;
