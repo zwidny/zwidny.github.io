@@ -111,3 +111,45 @@ categories: hadoop guide
    ```text
    wget http://apache.forsale.plus/hadoop/common/hadoop-3.2.0/hadoop-3.2.0.tar.gz
    ```
+   ```text
+   tar -zxf hadoop-3.2.0.tar.gz
+   ```
+   
+1. 配置hadoop, 执行下面命令, [官方配合文档](https://hadoop.apache.org/docs/r3.2.0/hadoop-project-dist/hadoop-common/ClusterSetup.html)
+
+   ```text
+   cd hadoop-3.2.0
+   echo HADOOP_HOME=$(pwd) >> ~/.bashrc
+   source ~/.bashrc
+   ```
+   
+   ```text
+   cat << EOF > etc/hadoop/core-site.xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+   
+   <configuration>
+   <property>
+     <name>fs.defaultFS</name>
+     <value>hdfs://192.168.11.2:9000/</value>
+   </property>
+   </configuration>
+   EOF
+   ```
+   ```text
+   cat << EOF > etc/hadoop/hdfs-site.xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+   <configuration>
+   <property>
+     <name>dfs.namenode.name.dir</name>
+     <value>/home/vagrant/hadoop-3.2.0/dfs/name</value>
+   </property>
+   <property>
+     <name>dfs.datanode.data.dir</name>
+     <value>/home/vagrant/hadoop-3.2.0/dfs/data</value>
+   </property>
+   </configuration>
+   EOF
+   ```
+   
