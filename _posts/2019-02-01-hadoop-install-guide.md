@@ -121,6 +121,7 @@ categories: hadoop guide
    cd hadoop-3.2.0
    echo HADOOP_HOME=$(pwd) >> ~/.bashrc
    source ~/.bashrc
+   echo export 'JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")' >> ./etc/hadoop/hadoop-env.sh
    ```
    
    ```text
@@ -152,4 +153,15 @@ categories: hadoop guide
    </configuration>
    EOF
    ```
-   
+1. 设置 ssh
+
+   Now check that you can ssh to the localhost without a passphrase:
+   ```text
+   ssh localhost
+   ```
+   If you cannot ssh to localhost without a passphrase, execute the following commands:
+   ```text
+   ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+   cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+   chmod 0600 ~/.ssh/authorized_keys
+   ```
