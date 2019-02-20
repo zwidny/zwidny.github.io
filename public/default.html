@@ -4,15 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"/>
 </head>
 <body>
-{% include navigation.html %}
+{% include github-forkme.html %}
+<div id="app"></div>
 <section class="section">
 
     <div class="container">
         {{ content }}
     </div>
 </section>
+<script type="application/javascript">
+    // 试vue能够使用jekyll的数据.
+    const data = {
+        navigation: {{site.data.navigation|jsonify}},
+    }
+</script>
 </body>
 </html>
