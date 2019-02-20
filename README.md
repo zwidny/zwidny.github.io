@@ -5,6 +5,7 @@
 
 ### 环境设置
 
+
 #### ubuntu 18.04
 **这里针对的是zsh, 如果你是用的是其他sh， 请更改相应的文件**
 ``
@@ -27,6 +28,7 @@ gem install jekyll bundler
 ```text
 -> pwd
 zwidny.github.
+-> npm install
 -> bundle install
 -> bundle exec jekyll serve
 
@@ -64,3 +66,27 @@ zwidny.github.
 └── staff.html
 
 ```
+
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
