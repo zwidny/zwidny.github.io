@@ -6,16 +6,20 @@
         >
 
             <a-menu
-                    :defaultSelectedKeys="['1']"
-                    :defaultOpenKeys="['sub1']"
+                    :defaultSelectedKeys="[0]"
                     mode="inline"
                     theme="dark"
                     :inlineCollapsed="collapsed"
             >
                 <a-menu-item v-for="(item, index) in navigation" :key="index">
-                    <a-icon type="pie-chart"/>
                     <span>{{item.name}}</span>
                 </a-menu-item>
+                <a-sub-menu key="blog">
+                    <span slot="title"><a-icon type="appstore"/><span>Blog</span></span>
+                    <a-menu-item v-for="(b, i) in blog" :key="'blog'+i">
+                        <span><a :href="b.url">{{b.title}}</a></span>
+                    </a-menu-item>
+                </a-sub-menu>
             </a-menu>
         </a-layout-sider>
         <a-layout>
@@ -33,7 +37,8 @@
         data() {
             return {
                 collapsed: false,
-                navigation: data.navigation,
+                navigation: jekyll_data.navigation,
+                blog: jekyll_data.blog,
             }
         },
     }
