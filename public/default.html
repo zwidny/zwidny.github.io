@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+{% include github-forkme.html %}
+<div id="app"></div>
+
+<script type="application/javascript">
+    // 试vue能够使用jekyll的数据.
+    let blog = []
+    {% for post in site.posts offset:0 limit:5 %}
+        blog.push({
+            title: `{{post.title}}`,
+            url: `{{post.url}}`,
+        })
+    {% endfor %}
+
+    const jekyll_data = {
+        navigation: JSON.parse(`{{site.data.navigation|jsonify}}`),
+        blog: blog
+    }
+    console.log(jekyll_data)
+</script>
+</body>
+</html>
