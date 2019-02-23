@@ -1,4 +1,5 @@
-- name: Home
+- name: home
+  verbose_name: Home
   link: /
 
 

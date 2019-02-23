@@ -10,20 +10,20 @@
 <div id="app"></div>
 
 <script type="application/javascript">
-    // 试vue能够使用jekyll的数据.
     let blog = []
-    {% for post in site.posts offset:0 limit:5 %}
+    {% for post in site.posts offset:0 limit:10 %}
         blog.push({
             title: `{{post.title}}`,
             url: `{{post.url}}`,
         })
     {% endfor %}
+    let home = {{site.posts.first|jsonify}}
 
     const jekyll_data = {
         navigation: JSON.parse(`{{site.data.navigation|jsonify}}`),
-        blog: blog
+        blog: blog,
+        homeSrc: home.url,
     }
-    console.log(jekyll_data)
 </script>
 </body>
 </html>
