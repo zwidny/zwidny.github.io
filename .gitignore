@@ -24,6 +24,5 @@ _site
 .sass-cache
 .jekyll-metadata
 .idea
-/_layouts
 /public/favicon.ico
 /public/index.html
