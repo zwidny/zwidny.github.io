@@ -18,10 +18,11 @@
         })
     {% endfor %}
     let home = {{site.posts.first|jsonify}}
-
+    let categories = {{site.categories|jsonify}}
     const jekyll_data = {
         navigation: JSON.parse(`{{site.data.navigation|jsonify}}`),
         blog: blog,
+        categories: categories,
         homeSrc: home.url,
     }
 </script>

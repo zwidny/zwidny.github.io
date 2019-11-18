@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
-<link href="/../assets/css/app.238e3b74.css" rel="preload" as="style"><link href="/../assets/css/chunk-vendors.a8645550.css" rel="preload" as="style"><link href="/../assets/js/app.d6f42f4c.js" rel="preload" as="script"><link href="/../assets/js/chunk-vendors.1785af8b.js" rel="preload" as="script"><link href="/../assets/css/chunk-vendors.a8645550.css" rel="stylesheet"><link href="/../assets/css/app.238e3b74.css" rel="stylesheet"></head>
+<link href="/../assets/css/app.238e3b74.css" rel="preload" as="style"><link href="/../assets/css/chunk-vendors.b0758605.css" rel="preload" as="style"><link href="/../assets/js/app.cae96043.js" rel="preload" as="script"><link href="/../assets/js/chunk-vendors.772a5a39.js" rel="preload" as="script"><link href="/../assets/css/chunk-vendors.b0758605.css" rel="stylesheet"><link href="/../assets/css/app.238e3b74.css" rel="stylesheet"></head>
 <body>
 {% include github-forkme.html %}
 <div id="app"></div>
@@ -18,12 +18,13 @@
         })
     {% endfor %}
     let home = {{site.posts.first|jsonify}}
-
+    let categories = {{site.categories|jsonify}}
     const jekyll_data = {
         navigation: JSON.parse(`{{site.data.navigation|jsonify}}`),
         blog: blog,
+        categories: categories,
         homeSrc: home.url,
     }
 </script>
-<script type="text/javascript" src="/../assets/js/chunk-vendors.1785af8b.js"></script><script type="text/javascript" src="/../assets/js/app.d6f42f4c.js"></script></body>
+<script type="text/javascript" src="/../assets/js/chunk-vendors.772a5a39.js"></script><script type="text/javascript" src="/../assets/js/app.cae96043.js"></script></body>
 </html>
