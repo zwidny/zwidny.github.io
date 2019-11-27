@@ -12,8 +12,8 @@
         <a-sub-menu key="blog">
           <span slot="title"><a-icon type="appstore"/><span>Blog</span></span>
           <div v-for="(k, v, i) in categories" :key="'blog'+i">
-            <div v-for="{kv, vv, vi} in v" v-bind:key="ii">
-              <div v-if="ki === '-'"></div>
+            <div v-for="{vk, vv, vi} in v" v-bind:key="vi">
+              <div v-if="vi === '-'"></div>
               <a-menu-item v-for="(b, viIdx) in vi" :key="viIdx">
                 <a :href="b.url">{{b.title}}</a>
               </a-menu-item>
