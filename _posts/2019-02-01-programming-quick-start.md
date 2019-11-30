@@ -2,7 +2,7 @@
 layout: markdown
 title:  "Programming Quick Start"
 date:   2019-02-01 16:49:47 +0800
-categories: programming guide A:B:C
+categories: guide:programming
 ---
 
 ## scala maven

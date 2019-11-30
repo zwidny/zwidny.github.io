@@ -10,21 +10,7 @@
 <div id="app"></div>
 
 <script type="application/javascript">
-    let blog = []
-    {% for post in site.posts offset:0 limit:10 %}
-        blog.push({
-            title: `{{post.title}}`,
-            url: `{{post.url}}`,
-        })
-    {% endfor %}
-    let home = {{site.posts.first|jsonify}}
-    let categories = {{site.categories|jsonify}}
-    const jekyll_data = {
-        navigation: JSON.parse(`{{site.data.navigation|jsonify}}`),
-        blog: blog,
-        categories: categories,
-        homeSrc: home.url,
-    }
+    const categories = {{site.categories|jsonify}}
 </script>
 </body>
 </html>
