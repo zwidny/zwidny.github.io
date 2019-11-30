@@ -2,7 +2,7 @@
 layout: markdown
 title:  "Spark Standalone Practise Guide"
 date:   2019-02-21 09:49:47 +0800
-categories: jekyll spark guide
+categories: spark guide
 ---
 
 本文主要的目的是了解spark的安装以及开发流程

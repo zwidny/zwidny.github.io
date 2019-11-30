@@ -2,7 +2,7 @@
 layout: markdown
 title:  "React VS Vue"
 date:   2019-01-31 09:49:47 +0800
-categories: jekyll update
+categories: react vue
 ---
 
 

@@ -2,7 +2,7 @@
 layout: markdown
 title:  "Hadoop Install Guide with Vagrant"
 date:   2019-02-01 09:49:47 +0800
-categories: hadoop guide
+categories: hadoop guide 
 ---
 
 本文将带你完成hadoop cluster的搭建, 本文假设你已经安装了

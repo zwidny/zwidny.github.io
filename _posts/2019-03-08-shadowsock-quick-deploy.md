@@ -2,7 +2,7 @@
 layout: markdown
 title:  Shadowsock quick deploy
 date:   2019-03-08 11:49:47 +0800
-categories: quick-start hbase
+categories: guide hbase
 ---
 
 

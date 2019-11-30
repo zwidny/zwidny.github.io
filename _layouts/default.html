@@ -4,26 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
-<link href="/../assets/css/app.238e3b74.css" rel="preload" as="style"><link href="/../assets/css/chunk-vendors.a8645550.css" rel="preload" as="style"><link href="/../assets/js/app.d6f42f4c.js" rel="preload" as="script"><link href="/../assets/js/chunk-vendors.1785af8b.js" rel="preload" as="script"><link href="/../assets/css/chunk-vendors.a8645550.css" rel="stylesheet"><link href="/../assets/css/app.238e3b74.css" rel="stylesheet"></head>
+<link href="../assets/js/app.css" rel="stylesheet"></head>
 <body>
 {% include github-forkme.html %}
 <div id="app"></div>
 
 <script type="application/javascript">
-    let blog = []
-    {% for post in site.posts offset:0 limit:10 %}
-        blog.push({
-            title: `{{post.title}}`,
-            url: `{{post.url}}`,
-        })
-    {% endfor %}
-    let home = {{site.posts.first|jsonify}}
-
-    const jekyll_data = {
-        navigation: JSON.parse(`{{site.data.navigation|jsonify}}`),
-        blog: blog,
-        homeSrc: home.url,
-    }
+    const categories = {{site.categories|jsonify}}
 </script>
-<script type="text/javascript" src="/../assets/js/chunk-vendors.1785af8b.js"></script><script type="text/javascript" src="/../assets/js/app.d6f42f4c.js"></script></body>
+<script type="text/javascript" src="../assets/js/app.394bd6718b71a0f63989.js"></script></body>
 </html>

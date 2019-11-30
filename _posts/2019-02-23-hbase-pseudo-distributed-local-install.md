@@ -2,7 +2,7 @@
 layout: markdown
 title:  "Hbase Pseudo Distributed Local Install"
 date:   2019-02-23 11:49:47 +0800
-categories: quick-start hbase
+categories: guide hbase
 ---
 
 ## Install HBase
