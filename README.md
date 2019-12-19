@@ -2,7 +2,7 @@
 
 ## Blog 指导
 
-需要在_post目录下创建标题为[]格式的md文件, 文件需要头需要包含如下信息
+需要在_post目录下创建标题为[yyyy-mm-dd-title-of-blog.md]格式的md文件, 文件需要头需要包含如下信息
 ```
 ---
 layout: markdown
