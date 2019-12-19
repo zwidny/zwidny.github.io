@@ -1,5 +1,17 @@
 # 痕迹
 
+## Blog 指导
+
+需要在_post目录下创建标题为[]格式的md文件, 文件需要头需要包含如下信息
+```
+---
+layout: markdown
+title:  "title"
+date:   2019-12-18 00:00:00 +0800
+categories: react vue js:vue
+---
+```
+
 ## 开发指导
 
 
