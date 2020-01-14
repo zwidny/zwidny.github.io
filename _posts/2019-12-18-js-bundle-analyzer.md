@@ -2,7 +2,7 @@
 layout: markdown
 title:  "webpack bundle analyzer"
 date:   2019-12-18 00:00:00 +0800
-categories: js:webpack js:bundle-analyzer
+categories: Tech:Web:Webpack:Tuning
 ---
 
 1. install webpack-bundle-analyzer
