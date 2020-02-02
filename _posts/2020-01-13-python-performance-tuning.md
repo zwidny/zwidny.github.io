@@ -41,8 +41,9 @@ def normal_sum(a, b, size=1000):
    pip install ipython
    ipython
    ```
-   + 实例程序
+   + 示例程序
    ```python
+   
    import numpy as np
    
    SIZE = 1000 * 1000
@@ -59,6 +60,7 @@ def normal_sum(a, b, size=1000):
        return s
    %timeit normal_sum(MatrixA, MatrixB)
    > 767 ms ± 24.3 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+   
    ```
 1. 查看具体的时间消耗
 
@@ -123,15 +125,20 @@ def normal_sum(a, b, size=1000):
    改写代码如下
       
    ```text
+   
    def tuning_sum(a, b, size=1000):
        return np.sum(a + b)
    print(tuning_sum(MatrixA, MatrixB))
    ```
    + 我们在分析一下代码
    ```text
+   
    python -m scalene particle.py
+   
    ```
+   
    ```text
+   
    particle.py: % of CPU time = 100.00% out of   0.22s.
             |     CPU % |     CPU % |   
      Line   |  (Python) |  (native) |  [particle.py]
