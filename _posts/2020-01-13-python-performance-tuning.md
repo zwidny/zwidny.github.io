@@ -66,16 +66,20 @@ def normal_sum(a, b, size=1000):
    > 767 ms ± 24.3 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
    
    ```
+   
 1. 查看具体的时间消耗
 
    知道了平均的时间消耗， 那么具体是哪里慢了呢， 这里我们使用第三方包[scalene](https://github.com/emeryberger/scalene)来分析我们的代码， 
    虽然Python为我们提供了剖析代码的module: cProfile, 但是相对于cProfile, 
    scanle有更好的表现.
    + 安装 
+   
    ```text
    pip install scalene
    ```
+   
    + 将我们上面的代码移动到particle.py中, 内容如下
+   
    ```python
    import numpy as np
    
@@ -96,11 +100,16 @@ def normal_sum(a, b, size=1000):
    # pr = cProfile.Profile()
    # pr.enable()
    print(normal_sum(MatrixA, MatrixB))
+   
    ```
+   
    + profile code
    ```text
+   
    python -m scalene particle.py
+   
    ```
+   
    ```
    particle.py: % of CPU time = 100.00% out of   0.93s.
             |     CPU % |     CPU % |   
