@@ -104,6 +104,7 @@ def normal_sum(a, b, size=1000):
    ```
    
    + profile code
+   
    ```text
    
    python -m scalene particle.py
@@ -132,6 +133,7 @@ def normal_sum(a, b, size=1000):
        15   |           |           |     return s
 
    ```
+   
    我们可以看到程序的大部分时间都花在for循环上面了， 如果我们消除显示的for循环就可以达到优化效果了
 ## 2. 优化代码
    
@@ -175,6 +177,7 @@ def normal_sum(a, b, size=1000):
        17   |           |           | # pr.print_stats()
    
    ```
+   
    我们可以看到优化后的代码比以前快了至少3倍
    
 ## 总结
