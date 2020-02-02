@@ -37,11 +37,15 @@ def normal_sum(a, b, size=1000):
    如何查看平均时间呢， 我们可以用time来完成，但强大的python已经为我们准备好了内置的module来完成这个功能： [timeit](https://docs.python.org/3/library/timeit.html)，
    因为ipython提供了很方便的交互式， 这里我们使用ipython
    + 安装并启动
-   ```text
-   pip install ipython
-   ipython
-   ```
+   
+      ```text
+      
+      pip install ipython
+      ipython
+      
+      ```
    + 示例程序
+
    ```python
    
    import numpy as np
