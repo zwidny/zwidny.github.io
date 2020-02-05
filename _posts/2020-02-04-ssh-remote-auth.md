@@ -1,7 +1,7 @@
 ---
 layout: markdown
 title:  "远程登录"
-date:   2019-12-18 00:00:00 +0800
+date:   2020-02-04 00:00:00 +0800
 categories: Guide:SSH
 ---
 本文介绍ssh授权到远程服务器的两种形式
